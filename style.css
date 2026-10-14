@@ -1,0 +1,167 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background: #f4f6f9;
+  color: #222;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1f4e79, #2e75b6);
+  color: #fff;
+  text-align: center;
+  padding: 50px 20px 60px;
+}
+
+.hero h1 {
+  margin: 0 0 10px;
+  font-size: 2.2rem;
+}
+
+.hero p {
+  margin: 0 0 25px;
+  opacity: 0.9;
+}
+
+#search {
+  width: 100%;
+  max-width: 620px;
+  padding: 14px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+main {
+  max-width: 860px;
+  margin: -25px auto 40px;
+  padding: 0 20px;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.categories button {
+  border: 1px solid #c9d4e0;
+  background: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.categories button:hover {
+  background: #e8f0f8;
+}
+
+.categories button.active {
+  background: #1f4e79;
+  border-color: #1f4e79;
+  color: #fff;
+}
+
+.counter {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.article {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.article summary {
+  padding: 16px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.article summary::-webkit-details-marker {
+  display: none;
+}
+
+.article summary::after {
+  content: '+';
+  float: right;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: #2e75b6;
+}
+
+.article[open] summary::after {
+  content: '\2212';
+}
+
+.article[open] summary {
+  border-bottom: 1px solid #eef1f5;
+}
+
+.article ol {
+  margin: 15px 20px 15px 10px;
+  line-height: 1.6;
+}
+
+.badge {
+  display: inline-block;
+  background: #e8f0f8;
+  color: #1f4e79;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.tip {
+  background: #fff8e6;
+  border-left: 4px solid #f0a020;
+  margin: 0 20px 18px;
+  padding: 10px 14px;
+  border-radius: 4px;
+}
+
+.empty {
+  text-align: center;
+  color: #666;
+  padding: 30px;
+}
+
+.contact {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin-top: 30px;
+  border-top: 4px solid #2e75b6;
+}
+
+.contact h2 {
+  margin-top: 0;
+  color: #1f4e79;
+}
+
+.contact ul {
+  padding-left: 18px;
+  line-height: 1.8;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.85rem;
+  padding: 20px;
+}

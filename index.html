@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baza wiedzy IT - FAQ</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="hero">
+    <h1>Baza wiedzy IT</h1>
+    <p>Rozwiąż najczęstsze problemy samodzielnie, w kilka minut i bez czekania na technika.</p>
+    <input id="search" type="search" placeholder="Opisz problem, np. drukarka, hasło, wolny komputer..." autofocus>
+  </header>
+
+  <main>
+    <nav id="categories" class="categories"></nav>
+    <p id="counter" class="counter"></p>
+    <section id="articles"></section>
+    <p id="empty" class="empty" hidden>
+      Nie znaleziono pasujących artykułów. Spróbuj innego słowa lub zgłoś problem do helpdesku.
+    </p>
+
+    <section class="contact">
+      <h2>Nic nie pomogło?</h2>
+      <p>Zgłoś problem do helpdesku. Podaj nazwę komputera, opis problemu i kroki, które już wykonałeś.</p>
+      <ul>
+        <li><strong>E-mail:</strong> helpdesk@firma.pl</li>
+        <li><strong>Telefon:</strong> wew. 1234 (pon-pt 8:00-16:00)</li>
+        <li><strong>Pilne awarie:</strong> 600 000 000</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Baza wiedzy IT &middot; projekt portfolio</footer>
+
+  <script src="articles.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
